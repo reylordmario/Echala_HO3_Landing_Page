@@ -1,0 +1,444 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-page {
+  background-color: rgba(236, 69, 3, 0.904);;
+}
+
+body
+{
+  color: white;
+  background-color:rgb(230, 229, 229);
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-form-header
+{
+  text-align: center;
+  background-color: rgb(0, 46, 196);
+  border: 1px solid rgb(0, 46, 196);
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 20px 0;
+  padding: 50px;
+}
+
+.speaker-form-header h1
+{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.speaker-form
+{
+  background-color: rgb(3, 170, 221);
+  border: 1px solid rgb(3, 170, 221);
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.form-row
+{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type = 'text'],
+.form-row input[type = 'email']
+{
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+
+
+.form-row input[type = 'text']:invalid,
+.form-row input[type = 'email']:invalid
+{
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+
+.right-aligned-label {
+  float: left;
+  padding-left: 100px;
+}
+.option1 {
+  display: inline-block; /* Display labels inline */
+  margin-top: 150px;
+  margin-left: 16px; /* Add some spacing between labels and radio buttons */
+  color: black;
+}
+
+.option2 {
+  display: inline-block; /* Display labels inline */
+  margin-left: 10px; /* Add some spacing between labels and radio buttons */
+  color: black;
+}
+
+.option3 {
+  display: inline-block; /* Display labels inline */
+  margin-top: 0px;
+  margin-left: 22px; /* Add some spacing between labels and radio buttons */
+  color: black;
+}
+
+.option4 {
+  display: inline-block; /* Display labels inline */
+  margin-left: 81px; /* Add some spacing between labels and radio buttons */
+  color: black;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+  display: inline-block; /* Display radio buttons inline */
+  margin-right: 5px; /* Add some spacing between radio buttons */
+}
+
+.legacy-form-row
+{
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.radio-label
+{
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.legacy-form-row2
+{
+  margin-left: 0px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.legacy-form-row .radio-label
+{
+  
+  margin-top: 100px;
+  margin-right: 100px;
+  font-size: 14px;
+ 
+}
+
+
+
+@media only screen and (min-width: 700px)
+{
+  .speaker-form-header,
+  .speaker-form 
+  {
+    width: 600px;
+  }
+  .form-row{
+    flex-direction: row;
+    align-items: flex-start; /* to avoid stretching */
+    margin-bottom: 20px;
+    height: initial;
+  }
+  .form-row input[type = 'text'],
+  .form-row input[type = 'email'],
+  .form-row select,
+  .form-row textarea
+  {
+    width: 250px;
+    height: initial;
+  }
+
+
+  .form-row label {
+    text-align: right;
+    width: 140px;
+    margin-top: 4px;
+    padding-right: 20px;
+    
+  }
+
+  .dropdown label {
+    padding-right: 16px;
+    padding-left: 5.5px;
+  }
+
+  
+  
+  
+  .menu-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0px 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 250px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .menu-button i {
+    margin-left: 8px;
+}
+
+/* Adjust the position of the icon */
+.menu-button i {
+    position: absolute;
+    right: 115px;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+/* Style the icon */
+.menu-button i::before {
+    content: '\25BC'; /* Downward arrow unicode */
+    font-size: 12px;
+}
+
+.menu-link.with-submenu .submenu-trigger::after {
+  content: '\25B6'; /* Rightward arrow unicode */
+  margin-left: 100px;
+}
+
+
+/* Hover effect */
+.menu-button:hover {
+    background-color: #e9ecef;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 11.5vh; /* Adjust height as needed */
+    width: 531px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 100%;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.submenu2 {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: 100%;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.menu-link.with-submenu:hover .submenu {
+  display: block;
+}
+.menu-link.with-submenu:hover .submenu2 {
+  display: block;
+}
+
+  .dropdown a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0px 5px;
+    background-color: white;
+    width: 248px;
+    color: black;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 2px;
+  }
+
+  .select {
+
+  }
+
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  .dropdown:hover .content {
+    display: block;
+  }
+
+  .dropdown:hover button {
+    background-color: rgb(202, 196, 196);
+  }
+
+  .dropdown a:hover {
+    background-color: rgb(202, 196, 196);
+  }
+  /*
+  .holder{
+    padding-left: 139.5px;
+  }
+  .dropdown select {
+    position: inherit;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 6px 12px;
+    width: 250px;
+    text-align: left;
+  }
+  */
+
+  
+  .legacy-form-row {
+    margin-bottom: 10px;
+  }
+  .legacy-form-row legend{
+    width: 120px;
+    text-align: right;
+    align-items: flex-start;
+    padding-right: 20px;
+
+  }
+  .legacy-form-row legend {
+    float: left;
+  }
+
+ 
+}
+
+.menu-bar select {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 3px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+   }
+   
+   .form-row .instructions {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 125px;
+    text-align: center;
+}
+
+.form-row .checkbox-label {
+    margin-bottom: 0;
+   }
+
+.form-row .checkbox-label {
+    margin-left: 100px;
+    width: auto;
+    }
+
+.cancel {
+  margin-left: 145px;
+  background-color: rgb(180, 24, 24);
+  color: white;
+  border-radius: 2px;
+  border-color: black;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.cancel:hover {
+  background-color: rgb(131, 23, 23);
+}
+
+.place {
+  margin-left: 50px;
+  background-color: rgb(10, 173, 24);
+  color: white;
+  border-radius: 2px;
+  border-color: black;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.place:hover {
+  background-color: rgb(21, 133, 30);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Set height equal to width to maintain a perfect circle */
+  border-radius: 50%; /* Make it a circle */
+}
+
+.logo2 {
+  display: block;
+  margin: 0 auto;
+  width: 1000px; /* Adjust width as needed */
+  height: 1000x; /* Set height equal to width to maintain a perfect circle */
+  
+}
+
+.thanks {
+  text-align: center;
+}

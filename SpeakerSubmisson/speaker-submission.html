@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+
+  <img class="logo" src="Images/website-logo.png" alt="logo" width="100px" height="45px"></a>
+
+  <header class = "speaker-form-header">
+    <h1>          
+      MARIO DENIMS <br>Shop Order Form
+    </h1>
+    <p>
+      <em>
+        Do you want to order an Item at Mario Denims? Fill out this form.
+      </em>
+    </p>
+  
+  
+  </header>
+
+  <br>
+
+  <form action = '' method = 'get' class = 'speaker-form'> 
+
+    <div class = 'form-row'>
+
+      <label for = 'full-name'>Name: </label>
+      <input id = 'full-name' name = 'full-name' type = 'text' placeholder="Ex. Juan Dela Cruz"/>
+    </div>
+
+    <div class = 'form-row'>
+      <label for = 'email'>Email: </label>
+      <input id = 'email' name = 'email' type = 'email' placeholder="mariodenims@example.com" />
+    </div>
+
+    <div class = 'form-row'>
+
+      <label for = 'full-name'>Age: </label>
+      <input id = 'full-name' name = 'full-name' type = 'text' placeholder="Ex. 18 years old"/>
+    </div>
+
+
+    <div class="dropdown">
+      <label for="t-shirt">Type of Denims: </label>
+      <button class="menu-button">Items <i class="fas fa-caret-down"></i></button>
+      <div class="container">
+          <div class="content">
+              <a href="#" class="menu-link">Jacket</a>
+              <a href="#" class="menu-link">Pants</a>
+              <div class="menu-link with-submenu">
+                  <a href="#" class="submenu-trigger">Jacket <i class="fas fa-caret-right"></i></a>
+                  <div class="submenu">
+                      <a href="#" class="submenu-link">Classic</a>
+                      <a href="#" class="submenu-link">Iconic</a>
+                  </div>
+              </div>
+              <a href="#" class="menu-link">Limited Edition</a>
+              <div class="menu-link with-submenu">
+                <a href="#" class="submenu-trigger">Specials&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <div class="submenu2">
+                    <a href="#" class="submenu-link">Random Gift</a>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div>
+    <label class="mode">Mode of Payment:</label>
+    <div class="option1">
+      <input type="radio" id="option1" name="payment" value="option1">
+      <label for="option1">Cash on Delivery</label>
+    </div>
+    <div class="option2">
+      <input type="radio" id="option2" name="payment" value="option2">
+      <label for="option2">Thru E-Wallet</label>
+    </div>
+  </div>
+  
+  
+    
+  <br>
+
+    <div class='form-row'>
+      
+        <label for='abstract'>Instructions:</label>
+        <textarea id='abstract' name='abstract'></textarea>
+    </div>
+
+    <br>
+    <br>
+    <button class="cancel">Cancel Order</button><button class="place">Place Order</button>
+    
+    
+  
+  </form>
+
+  
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
